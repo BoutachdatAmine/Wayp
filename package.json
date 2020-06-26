@@ -2,8 +2,9 @@
   "name": "auth0-nodejs-webapp-sample-new-test",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "start": "nodemon ./bin/www"
+"scripts": {
+    "start": "nodemon ./bin/www",
+    "deploy": "gh-pages -d ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
