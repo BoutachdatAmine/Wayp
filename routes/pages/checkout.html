@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipit • e-commerce demo</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/28a8f913f6.js" crossorigin="anonymous"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body class="col" id="checkout">
+    <nav class="row">
+        <a href="/" id="logo"><img src="brand/logo_red.png" alt="Shop logo"></a>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="mobileNavigation" class="mobile__nav col hide">
+            <a href="" id="closeMobileNav" class="close-icon"><i class="fas fa-times"></i></a>
+            <header class="col">
+                <h2>Navigation</h2>
+            </header>
+            <ul class="vertical-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="">Catalog</a></li>
+                <li><a href="/cart">Cart</a></li>
+                <li>
+                    <div class="hLine"></div>
+                </li>
+                <li><a href="/callback"><i class="fas fa-user"></i></a></li>
+                <li><a href=""><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+        <ul class="horizontal-nav no-mobile">
+            <li><a href="/">home</a></li>
+            <li><a href="">catalog</a></li>
+            <li><a href="/cart">cart</a></li>
+            </li>
+            <div class="vLine"></div>
+            </li>
+            <li><a href="/callback"><i class="fas fa-user"></i></a></li>
+            <li><i class="fas fa-search"></i></li>
+            <li id="welcome"></li>
+            <li><img id="avatar" src="" alt=""></li>
+            <li><a id="bye" ><i class="fas fa-sign-out-alt"></i></a></li>
+            
+        </ul>
+    </nav>
+    <aside class="accountPopup hide">
+        <h3>Do You have an account?</h3>
+        <div class="row">
+            <a href="">no</a>
+            <a href="" class="roundedBtn">yes</a>
+        </div>
+    </aside>
+    <div class="container col">
+        <h2>Checkout</h2>
+        <header class="progress row">
+            <h4 id="info" class="disabledStatus currentStatus">Information</h4>
+            <h4 id="ship" class="disabledStatus">Shipping</h4>
+            <h4 id="pay" class="disabledStatus">Pay</h4>
+        </header>
+        <form action="" class="col" id="form1">
+            <section class="form_row row">
+                <div class="input_item col">
+                    <label for="">First name</label>
+                    <input type="text" name="" id="" placeholder="Homer">
+                </div>
+                <div class="input_item col">
+                    <label for="">Last name</label>
+                    <input type="text" name="" id="" placeholder="Simpson">
+                </div>
+            </section>
+            <section class="form_row row">
+                <div class="input_item col">
+                    <label for="">email</label>
+                    <input type="mail" name="" id="" placeholder="homer.j.simson@mapple.com">
+                </div>
+                <div class="input_item col">
+                    <label for="">Phone number</label>
+                    <input type="tel" name="" id="" placeholder="555-332-132">
+                </div>
+            </section>
+        </form>
+        <form action="" class="col hide" id="form2">
+            <section class="form_row row">
+                <div class="input_item col">
+                    <label for="">Adress</label>
+                    <input type="text" name="" id="" placeholder="Evergreen Terrace">
+                </div>
+                <div class="input_item col">
+                    <label for="">House number</label>
+                    <input type="number" name="" id="" placeholder="742">
+                </div>
+                <div class="input_item col">
+                    <label for="">Zip code</label>
+                    <input type="number" name="" id="" placeholder="4319">
+                </div>
+                <div class="input_item col">
+                    <label for="">City</label>
+                    <input type="text" name="" id="" placeholder="Springfield">
+                </div>
+                <div class="input_item col">
+                    <label for="">Country</label>
+                    <input type="text" name="" id="" placeholder="United States of America">
+                </div>
+            </section>
+        </form>
+        <form action="" class="col hide container" id="form3">
+            <section class="form_row row">
+                <!-- <a href="" class="roundedBtn" id="paypalBtn"><i class="fab fa-paypal"></i></a>
+                <a href="" class="roundedBtn"><i class="fas fa-credit-card"></i></a> -->
+                <script>
+                    paypal.Buttons().render('#form3');
+                </script>
+            </section>
+        </form>
+        <section class="form_row row">
+            <a class="roundedBtn nextBtn">Shipping</a>
+        </section>
+    </div>
+    <!-- Script -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/cart.js"></script>()
+</body>
+
+</html>

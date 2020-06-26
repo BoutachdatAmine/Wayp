@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipit • e-commerce demo</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28a8f913f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body class="col" id="home">
+    <nav class="row">
+        <a href="/" id="logo"><img src="brand/logo_red.png" alt="Shop logo"></a>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="mobileNavigation" class="mobile__nav col hide">
+            <a href="" id="closeMobileNav" class="close-icon"><i class="fas fa-times"></i></a>
+            <header class="col">
+                <h2>Navigation</h2>
+            </header>
+            <ul class="vertical-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="">Catalog</a></li>
+                <li><a href="/cart">Cart</a></li>
+                <li>
+                    <div class="hLine"></div>
+                </li>
+                <li><a href="/callback"><i class="fas fa-user"></i></a></li>
+                <li><a href=""><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+        <ul class="horizontal-nav no-mobile">
+            <li><a href="/">home</a></li>
+            <li><a href="">catalog</a></li>
+            <li><a href="/cart">cart</a></li>
+            </li>
+            <div class="vLine"></div>
+            </li>
+            <li><a href="/callback"><i class="fas fa-user"></i></a></li>
+            <li><i class="fas fa-search"></i></li>
+            <li id="welcome"></li>
+            <li><img id="avatar" src="" alt=""></li>
+            <li><a id="bye" ><i class="fas fa-sign-out-alt"></i></a></li>
+            
+        </ul>
+        <div class="userPanel hide">
+
+        </div>
+    </nav>  
+    <header class="container">
+        <h1>Recommended today</h1>
+        <a href="">
+            <div class="product__box col">
+                <footer>
+                    <h4>Title</h4>
+                    <a href="#" class="roundedBtn">Discover this</a>
+                </footer>
+            </div>
+        </a>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Our favorites</h2>
+            <div class="product_presentation" id="presentation">
+                <!-- <a href="">
+                    <div class="product__box col">
+                        <footer>
+                            <h4>Title</h3>
+                            <p>
+                                Lorem ipsum
+                            </p>
+                            <div class="row">
+                                <p>price</p>
+                                <a href="#" class="roundedBtn">Discover this</a>
+                            </div>
+                        </footer>
+                    </div>
+                </a> -->
+            </div>
+        </div>
+    </main>
+    <footer class="footer__nav col">
+        <a href="index.html" class="footer_logo"><img src="brand/logo_white.png" alt=""></a>
+        <div class="container">
+            <ul class="vertical-nav">
+                <li>
+                    <h4>SHOP</h4>
+                </li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">Catalog</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <ul class="vertical-nav">
+                <li>
+                    <h4>Account</h4>
+                </li>
+                <li><a href="/profile">My account</a></li>
+                <li><a href="">My orders</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+            <ul class="vertical-nav">
+                <li>
+                    <h4>Company</h4>
+                </li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Social</a></li>
+            </ul>
+            <ul class="vertical-nav">
+                <li>
+                    <h4>Legal</h4>
+                </li>
+                <li><a href="/refund">Delivery and returns</a></li>
+                <li><a href="/terms">Terms and conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Script -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/backend.js"></script>
+    <script>
+        let name = JSON.parse(localStorage.getItem('loggedIn')).name;
+        console.log(name);
+        document.getElementById('avatar').src = JSON.parse(localStorage.getItem('loggedIn')).avatar;
+        document.getElementById('avatar').style.borderRadius = '50%';
+        document.getElementById('avatar').style.width = '25%';
+        document.getElementById('welcome').innerHTML = `Welcome ${JSON.parse(localStorage.loggedIn.name)}`;
+    </script>
+</body>
+
+</html>

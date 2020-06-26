@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipit • e-commerce demo</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28a8f913f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="col" id="profile">
+    <nav class="row">
+        <a href="/" id="logo"><img src="brand/logo_red.png" alt="Shop logo"></a>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="mobileNavigation" class="mobile__nav col hide">
+            <a href="" id="closeMobileNav" class="close-icon"><i class="fas fa-times"></i></a>
+            <header class="col">
+                <h2>Navigation</h2>
+            </header>
+            <ul class="vertical-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="">Catalog</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li>
+                    <div class="hLine"></div>
+                </li>
+                <li><a href="/callback"><i class="fas fa-user"></i></a></li>
+                <li><a href=""><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+        <ul class="horizontal-nav no-mobile">
+            <li><a href="">home</a></li>
+            <li><a href="">catalog</a></li>
+            <li><a href="cart.html">cart</a></li>
+            </li>
+            <div class="vLine"></div>
+            </li>
+            <li><a id="userBtn"><i class="fas fa-user"></i></a></li>
+            <li><i class="fas fa-search"></i></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>My profile</h1>
+        </header>
+        <main>
+            <form name="form">
+                <div class="forDesktop col">
+                    <div class="form_row">
+                        <div class="input_item col">
+                            <label for="fname">First name</label>
+                            <input type="text" name="fname" id="" placeholder="Homer J.">
+                        </div>
+                        <div class="input_item col">
+                            <label for="lname">Last name</label>
+                            <input type="text" name="lname" id="" placeholder="Simpson">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="input_item col">
+                            <label for="mail">Email</label>
+                            <input type="email" name="mail" id="" placeholder="homer.j.simpson@mapple.com">
+                        </div>
+                        <div class="input_item col">
+                            <label for="phone">Phone number</label>
+                            <input type="text" name="phone" id="" placeholder="+343 345 235">
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="input_item col">
+                        <label for="adr1">Adress line 1 *</label>
+                        <input type="text" name="adr1" id="" placeholder="Evergreen Terrace">
+                    </div>
+                    <div class="input_item col">
+                        <label for="adr2">Adress line 2</label>
+                        <input type="text" name="adr2" id="" placeholder="Evergreen Terrace">
+                    </div>
+                    <div class="input_item col">
+                        <label for="housenum">House number *</label>
+                        <input type="number" name="housenum" id="" placeholder="742">
+                    </div>
+                    <div class="input_item col">
+                        <label for="zipCode">Zip code *</label>
+                        <input type="number" name="zipCode" id="" placeholder="742">
+                    </div>
+                    <div class="input_item col">
+                        <label for="city">City *</label>
+                        <input type="text" name="city" id="" placeholder="742">
+                    </div>
+                    <div class="input_item col">
+                        <label for="country">Country *</label>
+                        <input type="text" placeholder="United States of America">
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="input_item col">
+                        <a class="roundedBtn" id="update">Update</a>
+                        <a href="" class="normal">Delete</a>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+    <footer class="footer__nav col">
+        <a href="index.html" class="footer_logo"><img src="brand/logo_white.png" alt=""></a>
+        <div class="container">
+            <ul class="vertical-nav">
+                <li>
+                    <h4>SHOP</h4>
+                </li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">Catalog</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <ul class="vertical-nav">
+                <li>
+                    <h4>Account</h4>
+                </li>
+                <li><a href="">My account</a></li>
+                <li><a href="">My orders</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+            <ul class="vertical-nav">
+                <li>
+                    <h4>Company</h4>
+                </li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Social</a></li>
+            </ul>
+            <ul class="vertical-nav">
+                <li>
+                    <h4>Legal</h4>
+                </li>
+                <li><a href="">Delivery and returns</a></li>
+                <li><a href="">Terms and conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Script -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

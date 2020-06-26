@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+// Basics
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+// Default
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vLine {
+    border: .2px solid red;
+}
+.hLine{
+    width: 70px;
+    height: 1.6px;
+    overflow: hidden;
+    background-color: green;
+    margin: 7px auto;
+    border-radius: 20px;
+}
+
+
+// Navigation 
+ul.vertical-nav {
+    li {
+        text-align: left;
+
+        a {
+            font-size: 18px;
+            margin: 8px 16px;
+            padding: 3px 12px;
+            display: inline-block;
+        }
+    }
+}
+
+ul.horizontal-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    li {
+        display: inline-block;
+        padding: 13px 16px;
+        text-transform: lowercase;
+    }
+}
+
+//  Mobile navigation
+#hamburger {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    div {
+        background-color: green;
+        width: 7px;
+        height: 7px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+}
+
+// Links
+a.normal{
+    color: #000;
+    text-decoration: underline;
+}
+a.roundedBtn {
+    background-color: green;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 7px 18px;
+    
+}
+
+// Typography
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4{
+    font-size: 1.2em;
+}
+p{
+    line-height: 1.8;
+}
+// Forms
+button{
+    background-color: rgba(0,0,0,0);
+    border:none;
+    background-color: red;
+    padding: 0 12px;
+    border-radius: 20px;
+}
+input, select{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    padding: 0;
+    color: #fff;
+    font-size: 1em;
+}
+select{
+    border: 1px solid #666;
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 4px 4px;
+}
