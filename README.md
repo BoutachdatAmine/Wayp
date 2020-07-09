@@ -18,7 +18,7 @@ for launching the script
 
 ## Good to know's
 Like I told above, we fist launched our projet on a home deployed Raspberri Pi 3 running in Rasbian and using PM2.
-Know it's running on a school ubuntu VM. We'used port 3000 (to keep it simple).
+Now it's running on a school ubuntu VM. We'used port 3000 (to keep it simple).
 * __Auth0__
 For the user part we used The Auth0 tool to manage the login, and user creation. They also send a confirmation mail and manage the password with Bcrypt.
 `/callback` is the node entry for acces to the Auth0 app and `/logout`for logging out.
